@@ -11,18 +11,19 @@ header{
 
     background-color: aliceblue;
 }
-
+#app{
+    display: grid;
+    justify-content: center;
+}
 
 
 input, button{ 
-    padding: 20px;
+    padding: 10px 200px;
+
+    margin: 0px 0px 5px 0px;
     text-align: center;
 
     font-size: 15px;
-}
-
-input{
-    margin-left: 10px;
 }
 
 button{
@@ -64,109 +65,235 @@ a:hover{
     color: red;
 }
 
+.lista{
+    display: -moz-box;
+    justify-content: center;
+
+    width: 900px; 
+    word-wrap: break-word; /*delimita tamanho do texto seguido do width*/
+    text-align: justify; 
+}
+
 /*Responsivo*/
-@media(min-width:200px){
-
+@media screen and (min-width:200px) and (max-width: 230px){
+    #app{
+        display: grid;
+        justify-content: center;
+    }
+    header{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
     input{
-        margin-left: 4px;
-        padding: 2px;
-
+        padding: 1px;
+        margin: 0px;
         font-size: 14px;
     }
     button{
         padding: 1px;
         font-size: 14px;
+        margin-top: 5px;
+        
+    }
+    ul, li{
+        font-size: 16px;
+        margin: 0px;
+        padding: 5px;
+    }
+    .lista{
+        width: 190px; 
+        word-wrap: break-word; 
+        text-align: justify;
+    }
+}
+@media screen and (min-width:231px) and (max-width:251px){
+    #app{
+        display: grid;
+        justify-content: center;
+    }
+    input{
+        padding: 9px 0px;
+        margin-bottom: 5px;
+        margin: 0px 0px 5px 0px;
+
+        border-radius: 10px;
+    }
+    button{
+        border-radius: 10px;
+        padding:9px 0px;
     }
     ul, li{
         font-size: 18px;
     }
+    .lista{
+        width: 221px; 
+        word-wrap: break-word;
+        text-align: justify; 
+    }
 }
-
-@media(min-width:300px){
-
+@media screen and (min-width:252px) and (max-width:299px){
+    #app{
+        display: grid;
+        justify-content: center;
+    }
     input{
-        margin-left: 20px;
+        padding: 8px;
+        margin: 0px 0px 5px 0px;
+
+        border-radius: 10px;
+    }
+    button{
         padding: 9px;
-
-        border-radius: 10px;
-    }
-    button{
-        padding: 9px;
         border-radius: 10px;
     }
     ul, li{
         font-size: 18px;
     }
-}
-
-
-@media(min-width:400px){
-
-    input{
-        margin-left: 20px;
-        padding: 12px;
+    .lista{
+        width: 232px; 
+        word-wrap: break-word; 
+        text-align: justify;
     }
-    button{
+}
+@media screen and (min-width:300px) and (max-width:399px){
+    #app{
+        display: grid;
+        justify-content: center;
+    }
+    input, button{
         padding: 12px;
+        margin: 0px 0px 5px 0px;
+
+        font-size: 21px;
+
+        border-radius: 10px;
+    }
+    ul, li{
+        font-size: 21px;
+    }
+    .lista{
+        width: 280px; 
+        word-wrap: break-word; 
+        text-align: justify;
+    }
+}
+@media screen and (min-width:400px) and (max-width:499px){
+    #app{
+        display: grid;
+        justify-content: center;
+    }
+    header{
+        margin-bottom: 15px;
+    }
+    input, button{
+        padding: 18px;
+        margin: 0px 0px 5px 0px;
+
+        border-radius: 10px;
+
+        font-size: 21px;
+    }
+    ul, li{
+        font-size: 21px;
+    }
+    .lista{
+        width: 350px; 
+        word-wrap: break-word; 
+        text-align: justify;
+    }
+}
+@media screen and (min-width:500px) and (max-width:599px){
+    #app{
+        display: grid;
+        justify-content: center;
+    }
+    input, button{
+        padding: 12px;
+        margin: 0px 0px 5px 0px;
+
+        border-radius: 10px;
+    }
+
+    ul, li{
+        font-size: 18px;
+    }
+    .lista{
+        width: 480px; 
+        word-wrap: break-word; 
+        text-align: justify;
+    }
+}
+@media screen and (min-width:600px) and (max-width:699px){
+    #app{
+        display: grid;
+        justify-content: center;
+    }
+    input, button{
+        padding: 12px;
+        margin: 0px 0px 5px 0px;
+
+        border-radius: 10px;
     }
     ul, li{
         font-size: 18px;
     }
-}
-
-@media(min-width:700px){
-    input{
-        margin-left: 10%;
-        padding: 18px;
-    }
-    button{
-        padding: 18px;
-        margin-right:10%;
-    }
-    ul, li{
-        font-size: 20px;
+    .lista{
+        width: 580px; 
+        word-wrap: break-word;
+        text-align: justify;
     }
 }
+@media screen and (min-width:700px) and (max-width:799px){
+    #app{
+        display: grid;
+        justify-content: center;
+    }
+    header{
+        font-size: 50px;
+    }
+    input, button{
+        padding: 14px;
 
-@media(min-width:800px){
-
-    input{
-        margin-left: 10%;
-        padding: 18px;
+        font-size: 34px;
 
         border-radius: 10px;
-    }
-    button{
-        padding: 18px;
-        margin-right:10%;
 
-        border-radius: 10px;
+        margin: 0px 0px 5px 0px;
     }
     ul, li{
-        font-size: 20px;
-        margin-left: 4%;
+        font-size: 34px;
+    }
+    .lista{
+        width: 550px; 
+        word-wrap: break-word; 
+        text-align: justify;
     }
 }
-
-
-@media(min-width: 900px){
-
-    
-    input, button{ 
-        padding: 20px;
-        text-align: center;
-    
-        font-size: 15px;
+@media screen and (min-width:800px) and (max-width:899px){
+    #app{
+        display: grid;
+        justify-content: center;
     }
-    
-    ul{
+    header{
+        font-size: 50px;
+    }
+    input, button{
+        padding: 24px;
+
+        margin: 0px 0px 5px 0px;
+
+        border-radius: 10px;
+
         font-size: 24px;
     }
-    
-    
+    ul, li{
+        font-size: 27px;
+    }
+    .lista{
+        width: 650px; 
+        word-wrap: break-word; 
+        text-align: justify;
+    }
 }
-
-
-
 
 /*End Responsivo*/
