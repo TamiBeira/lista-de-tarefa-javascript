@@ -24,4 +24,4 @@ Este repositório contém um projeto de lista de tarefas simples criado com HTML
 5. Remova tarefas da lista clicando no botão de exclusão.
 6. As tarefas são armazenadas localmente para persistência.
 
-
+![Captura de tela 2023-09-04 140154](https://github.com/TamiBeira/lista-de-tarefa-javascript/assets/55815968/2bb77953-4ec6-4bda-9ea8-721d46af3968)
